@@ -5,6 +5,15 @@ KillTYZ 是一个基于 [TinyLara](http://tinylara.com) 的私人 Todo-List 应�
 
 在线示例：http://killtyz.com/
 
+## 安装
+
+```
+git clone https://github.com/johnlui/KillTYZ.git ./killtyz
+cd killtyz
+composer update
+```
+把网站根目录指向 `killtyz/public`，打开页面！
+
 ## 开发目的
 
 通过构建一个简单应用，来检验 TinyLara 的实用性，并在构建 KillTYZ 的过程中不断完善 TinyLara 框架。
