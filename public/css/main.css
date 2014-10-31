@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+*{
+  font-family: "Helvetica Neue", STFangSong, STXihei, "Microsoft YaHei", "Songti SC", SimSun, Heiti, sans-serif;
+}
+
+body{
+  background-color: #fff;
+  word-wrap: break-word;
+  color: #34495e;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+#head{
+  text-align: center;
+  margin-top: 20px;
+}
+#logo{
+  width: 100px;
+  margin-bottom: -10px;
+}
+
+h1, h2, h3{
+  font-weight: bold;
+}
+
+#box{
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#add-input{
+  width: 100%;
+}
+
+#list{
+  margin-top: 20px;
+}
+
+.list-group-item .check{
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: url('../images/check.png') no-repeat;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+}
+.list-group-item .check.checked{
+  background-position: -22px 0;
+}
+
+.list-group-item .value{
+  margin-left: 30px;
+  height: 20px;
+}
+.list-group-item .value.checked{
+  text-decoration: line-through;
+  color: #999999;
+}
+.list-group-item .delete{
+  float: right;
+  cursor: pointer;
+}
+
+#foot{
+  text-align: center;
+  margin-top: 100px;
+}
