@@ -37,7 +37,8 @@
       </div>
     </div>
     <div id="foot">
-      &copy;<?php echo date('Y') ?> <a href="http://killtyz.com">KillTYZ</a> | Powered by <a href="http://tinylara.com">TinyLara</a>
+      &copy;<?php echo date('Y') ?> <a href="http://killtyz.com">KillTYZ</a> | <a href="https://github.com/johnlui/KillTYZ">Github Repo</a>
+      <br>Powered by <a href="http://tinylara.com">TinyLara</a>
     </div>
   </div>
 </body>
