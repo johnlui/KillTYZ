@@ -12,7 +12,13 @@ git clone https://github.com/johnlui/KillTYZ.git ./killtyz
 cd killtyz
 composer update
 ```
-把网站根目录指向 `killtyz/public`，打开页面！
+把网站根目录指向 `killtyz/public`。编辑 `config/config.php` 中的
+
+```
+'base_url' => 'ooxx.com'
+```
+
+为正确的值，打开页面！
 
 ## 开发目的
 
