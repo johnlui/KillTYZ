@@ -26,13 +26,6 @@
           <input id="add-input" type="text" class="form-control" placeholder="添加任务">
         </div>
         <div id="list" class="list-group">
-          <a href="#" class="list-group-item">
-            <span class="check checked"></span>
-            <span class="value checked">
-              KillTYZ 基础 Todo-List 功能实现
-            </span>
-            <span class="delete glyphicon glyphicon-trash"></span>
-          </a>
         </div>
       </div>
     </div>
