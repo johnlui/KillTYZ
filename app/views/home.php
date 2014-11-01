@@ -40,6 +40,7 @@
       &copy;<?php echo date('Y') ?> <a href="http://killtyz.com">KillTYZ</a> | <a href="https://github.com/johnlui/KillTYZ">Github Repo</a>
       <br>Powered by <a href="http://tinylara.com">TinyLara</a>
     </div>
+    <div style="display: none;"><script src="http://v1.cnzz.com/stat.php?id=1253509300&web_id=1253509300" language="JavaScript"></script></div>
   </div>
 </body>
 </html>

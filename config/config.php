@@ -1,6 +1,6 @@
 <?php
 
 return [
-  'base_url' => 'http://fuck.io:81/',
+  'base_url' => '/',
   'time_zone' => 'Asia/Shanghai',
 ];
