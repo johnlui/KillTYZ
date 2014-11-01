@@ -41,6 +41,7 @@ h1, h2, h3{
 
 .list-group-item .check{
   display: block;
+  top: 12px;
   margin: 0;
   padding: 0;
   width: 20px;
@@ -65,6 +66,7 @@ h1, h2, h3{
 .list-group-item .delete{
   float: right;
   cursor: pointer;
+  top: 7px;
 }
 
 #foot{

@@ -1,9 +1,8 @@
 $(document).ready(function () {
   $('#add-input').focus();
   $('#add-input').bind('keypress',function(event){
-    if(event.keyCode == "13")
-    {
-      var value = $(this).val();
+    var value = $(this).val();
+    if( event.keyCode == "13" && value ) {
       $('#list').prepend('<a href="#" class="list-group-item"><span class="check"></span><span class="value">'+value+'</span><span class="delete glyphicon glyphicon-trash" style="display: none;"></span></a>');
       $(this).val('');
     }
