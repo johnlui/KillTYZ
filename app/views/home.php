@@ -12,6 +12,9 @@
 </head>
 <body>
   <div id="wrap">
+    <div id="login-button">
+      <a href="<?php echo BASE_URL ?>login" class="btn btn-danger">登录</a>
+    </div>
     <div id="head">
       <div class="logo">
         <img id="logo" src="<?php echo BASE_URL.'images/logo.png' ?>" alt="logo">

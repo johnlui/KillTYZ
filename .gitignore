@@ -1,4 +1,7 @@
+/config/config.php
+/config/database.php
 /vendor
+/logs
 composer.phar
 composer.lock
 .DS_Store

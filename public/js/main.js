@@ -36,9 +36,11 @@ $(document).ready(function () {
   store(0, 'KillTYZ 基础 Todo-List 功能实现', true);
   store(1, '浏览器本地存储 功能实现，请大胆刷新页面！', true);
   for(x in localStorage) {
-    var obj = JSON.parse(localStorage.getItem(x));
+    var item = localStorage.getItem(x);
+    var obj = JSON.parse(item);
     addItem(obj.time, obj.value, obj.checked);
   }
+  upload();
 });
 
 function store(time, value, checked) {
@@ -59,4 +61,11 @@ function stringify(time,value,checked) {
 function addItem(time, value, checked) {
   var node = checked ? '<a href="#" class="list-group-item" data-time="'+time+'"><span class="check checked"></span><span class="value checked">'+value+'</span><span class="delete glyphicon glyphicon-trash"></span></a>' : '<a href="#" class="list-group-item" data-time="'+time+'"><span class="check"></span><span class="value">'+value+'</span><span class="delete glyphicon glyphicon-trash" style="display: none;"></span></a>';
   $('#list').prepend(node);
+}
+
+function upload() {
+  $.post(
+    '/storage',
+    localStorage
+    );
 }

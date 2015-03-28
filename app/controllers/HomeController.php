@@ -6,21 +6,20 @@ class HomeController extends BaseController {
 
   public function home()
   {
-    /*
-    // mail sample
-    Mail::to('foo@bar.io')->from('bar@foo.io')
-                          ->title('Foo Bar')
-                          ->content('<h1>Hello~~</h1>')
-                          ->send();
-    // redis sample
-    Redis::set('key','value',3000,'ms');
-    echo Redis::get('key');
-
-    // view sample
-    return View::make('home')->with('article',Article::first())
-                              ->withTitle('TinyLara :-D')
-                              ->withFooBar('foo_bar');
-    */
     return View::make('home')->withTitle('KillTYZ 干掉拖延症');
+  }
+  public function storage()
+  {
+    $user_id = 2;
+    if (Task::where('user_id', $user_id)->count()) {
+      $task = Task::where('user_id', $user_id)->first();
+    } else {
+      $task = new Task;
+    }
+
+    $task->user_id = $user_id;
+    $task->tasks = json_encode($_POST);
+    $task->save();
+    exit;
   }
 }
