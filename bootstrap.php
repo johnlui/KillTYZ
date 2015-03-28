@@ -17,6 +17,8 @@ date_default_timezone_set($config['time_zone']);
 // Autoload
 require BASE_PATH.'/vendor/autoload.php';
 
+// KillTYZ core
+require BASE_PATH.'/services/KillTYZ.php';
 // View Loader
 class_alias('\TinyLara\TinyView\TinyView','View');
 
