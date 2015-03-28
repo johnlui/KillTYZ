@@ -1,92 +1,42 @@
-# *TinyLara*
+# *KillTYZ* 干掉拖延症
+![KillTYZ](https://raw.githubusercontent.com/johnlui/KillTYZ/master/public/images/logo.png)
+
+KillTYZ 是一个基于 [TinyLara](http://tinylara.com) 的私人 Todo-List 应用，是 TinyLara 的第一个官方示例项目。
+
+在线示例：http://killtyz.com/
+
+## 安装
 
 ```
-  ______    _                      __
- /_  __/   (_)   ____    __  __   / /   ____ _   _____  ____ _
-  / /     / /   / __ \  / / / /  / /   / __ `/  / ___/ / __ `/
- / /     / /   / / / / / /_/ /  / /___/ /_/ /  / /    / /_/ /
-/_/     /_/   /_/ /_/  \__, /  /_____/\__,_/  /_/     \__,_/
-                      /____/
-```
-
-TinyLara is a Simple PHP Framework based on Composer, looks like a Tiny Laravel. [Read the documentation](https://github.com/TinyLara/TinyLara/wiki).
-
-## Start
-### Download:
-
-```bash
-git clone https://github.com/TinyLara/TinyLara
-cd TinyLara
-```
-
-OR:
-
-```bash
-wget https://github.com/TinyLara/TinyLara/archive/v1.2.zip
-unzip v1.2.zip
-cd TinyLara-1.2
-```
-
-### Install dependencies:
-
-```bash
+git clone https://github.com/johnlui/KillTYZ.git ./killtyz
+cd killtyz
 composer update
 ```
+把网站根目录指向 `killtyz/public`。编辑 `config/config.php` 中的
 
-Then modify `config/database.php` with right information and import `demo.sql`.
-
-### Just see:
-
-*config/routes.php :*
-
-```php
-Route::get('/', 'HomeController@home');
-
-Route::any('foo', function() {
-  echo "Foo!";
-});
+```
+'base_url' => 'ooxx.com'
 ```
 
-*app/controllers/HomeController.php :*
+为正确的值，打开页面！
 
-```php
-public function home()
-{
-  // mail sample
-  Mail::to('foo@bar.io')->from('bar@foo.io')
-                        ->title('Foo Bar')
-                        ->content('<h1>Hello~~</h1>')
-                        ->send();
-  // redis sample
-  Redis::set('key','value',3000,'ms');
-  echo Redis::get('key');
+## 开发目的
 
-  // view sample
-  return View::make('home')->with('article',Article::first())
-                            ->withTitle('TinyLara :-D')
-                            ->withFooBar('foo_bar');
-}
-```
+通过构建一个简单应用，来检验 TinyLara 的实用性，并在构建 KillTYZ 的过程中不断完善 TinyLara 框架。
 
-### Run:
-```bash
-cd public && php -S 127.0.0.1:3000
-```
-Visit [http://127.0.0.1:3000/](http://127.0.0.1:3000/)
+## 功能计划
 
-### It's already running!
-<br>
+### 已有功能
 
-## Features
+1. 2014-11-01 01:08:21 完成基本 Todo-List 功能。
+2. 2014-11-02 00:28:30 浏览器本地存储 实现
 
-1. Tiny router [TinyLara/TinyRouter](https://github.com/TinyLara/TinyRouter), based on fast and sexy [codingbean/macaw](https://packagist.org/packages/codingbean/macaw)
-2. MVC architecture
-3. One of the Most powerful PHP ORM on Earth: [Laravel Eloquent](http://laravel.com/docs/4.2/eloquent)
-4. Powerful Laravel-style view loader [TinyLara/TinyView](https://github.com/TinyLara/TinyView)
-5. Redis ready in Laravel-style
-6. Handy SMTP mailer
+### 计划功能
 
+1. ~~浏览器本地存储~~
+2. 服务端数据持久化
+3. 多用户支持（待定）
 
 ## License
 
-The TinyLara framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+KillTYZ 采用 [MIT](http://opensource.org/licenses/MIT) 协议分发，衍生项目除了必须采用 MIT 协议之外无任何限制。
